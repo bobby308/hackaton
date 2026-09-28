@@ -47,10 +47,10 @@ export const TEST_SCENARIOS: TestScenario[] = [
     images: [
       {
         id: 'img-1-ext',
-        label: 'Carton Exterior',
+        label: 'Photorealistic Carton Exterior',
         role: 'carton_exterior',
-        url: createCartonExteriorSvg({ condition: 'pristine', sku: 'BLUE-BOTTLE-001' }),
-        description: 'Master carton #1 exterior. Corners sharp, edge corrugation intact, tamper tape unbroken.',
+        url: '/src/assets/images/carton_clean_box_1790616936550.jpg',
+        description: 'Cinematic 8K macro capture of master carton #1 exterior. Corners sharp, edge corrugation intact, tamper tape unbroken.',
       },
       {
         id: 'img-1-lbl',
@@ -137,9 +137,9 @@ export const TEST_SCENARIOS: TestScenario[] = [
       },
       {
         id: 'img-2-ext',
-        label: 'Carton Exterior',
+        label: 'Photorealistic Carton Exterior',
         role: 'carton_exterior',
-        url: createCartonExteriorSvg({ condition: 'pristine', sku: 'BLUE-BOTTLE-001' }),
+        url: '/src/assets/images/carton_clean_box_1790616936550.jpg',
         description: 'Outer carton appears intact, proving shortage occurred during manufacturer packing.',
       },
     ],
@@ -378,13 +378,9 @@ export const TEST_SCENARIOS: TestScenario[] = [
     images: [
       {
         id: 'img-6-ext',
-        label: 'Crushed Shoulder & Edge',
+        label: 'Crushed Shoulder & Edge Defect',
         role: 'carton_exterior',
-        url: createCartonExteriorSvg({
-          condition: 'crushed',
-          sku: 'BLUE-BOTTLE-001',
-          highlightBox: { x: 380, y: 110, w: 150, h: 140, label: 'CRUSH DEFECT: CRITICAL', color: '#ef4444' }
-        }),
+        url: '/src/assets/images/carton_crushed_box_1790616949251.jpg',
         description: 'Edge Crush Test (ECT) failure along vertical crease line. Crease depth >45mm exceeds ASTM D642 tolerance.',
       },
       {
@@ -446,11 +442,7 @@ export const TEST_SCENARIOS: TestScenario[] = [
         id: 'img-7-ext',
         label: 'Carton Base Liquid Tide Mark',
         role: 'carton_exterior',
-        url: createCartonExteriorSvg({
-          condition: 'water_damaged',
-          sku: 'BLUE-BOTTLE-001',
-          highlightBox: { x: 80, y: 260, w: 420, h: 110, label: 'WATER INGRESS DEFECT', color: '#0284c7' }
-        }),
+        url: '/src/assets/images/carton_water_box_1790616962497.jpg',
         description: 'Capillary water pooling along base panel. Flute integrity compromised; high biological/mold risk.',
       },
     ],

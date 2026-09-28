@@ -2,5 +2,7 @@
   "name": "Receiving Manager AI - Inbound Logistics & Quality Inspection",
   "description": "AI-powered inbound receiving inspection agent: verifies SKU identity, expected vs observed quantities, variant specs, carton/product damage, missing components, and creates audit-ready evidence records.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
